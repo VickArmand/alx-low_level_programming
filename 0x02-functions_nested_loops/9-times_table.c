@@ -12,7 +12,6 @@ void times_table(void)
 			if (j == 9)
 			{
 				_putchar(n);
-				_putchar('$');
 				_putchar(' ');
 			}
 			else
