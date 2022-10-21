@@ -6,24 +6,24 @@ void print_to_98(int n)
 
 	if (n < 98)
 	{
-		for (; i <= 98; i++)
+		for (; n <= 98; n++)
 		{
-			_putchar(i);
+			_putchar(n);
 			_putchar(',');
 			_putchar(' ');
 		}
 	}
 	else if (n == 98)
 	{
-		_putchar(i);
+		_putchar(n);
 		_putchar(',');
 		_putchar(' ');
 	}
 	else
 	{
-		for (; i >= 98; i--)
+		for (; n >= 98; n--)
 		{
-			_putchar(i);
+			_putchar(n);
 		}
 	}
 
