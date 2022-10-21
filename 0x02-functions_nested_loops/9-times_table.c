@@ -11,12 +11,12 @@ void times_table(void)
 			n = i * j;
 			if (j == 9)
 			{
-				_putchar(n);
+				_putchar(n + '0');
 				_putchar(' ');
 			}
 			else
 			{
-				_putchar(n);
+				_putchar(n + '0');
 				_putchar(' ');
 
 			}
