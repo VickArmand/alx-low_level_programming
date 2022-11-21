@@ -1,1 +1,1 @@
-Introduction to C programming
+More and more adventures of pointers, arrays and strings
