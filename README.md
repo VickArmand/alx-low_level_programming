@@ -1,10 +1,19 @@
-**Welcome to adventures of C programming**
+**WELCOME TO SYSTEM ENGINEERING DEVOPS**
 <br>
-Learning objectives: <br>
-<ol>
-<li>Installing and using betty</li>
-<li>Understanding C programming basics </li>
-<li>Understanding and implementing betty coding styles in C</li>
-<li>Understanding the C program compilation process</li>
-<li>Implementing the C compilation process using gcc compiler</li>
-</ol>
+Learning Objectives:<br>
+* Hello World
+* Variables and conditionals
+* Functions and loops
+* Debugging
+* Arrays and pointers
+* Strings
+* Recursion
+* Static libraries
+* Variadic functions
+* Linked lists (single and double)
+* Dynamic libraries
+* File i/o
+* malloc
+* structures
+* hash tables
+* argc and argv
