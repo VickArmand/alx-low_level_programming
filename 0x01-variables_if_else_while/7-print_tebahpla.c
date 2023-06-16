@@ -1,18 +1,18 @@
 #include <stdio.h>
 
 /**
- * main - prints single digit numbers of base 10
+ * main - prints reversed alphabet in lowercase
  * Return: success (0)
  */
 
 int main(void)
 {
-	char letter = 48;
+	char letter = 'z';
 
-	while (letter < 58)
+	while (letter >= 'a')
 	{
 		putchar(letter);
-		letter++;
+		letter--;
 	}
 	putchar('\n');
 	return (0);
