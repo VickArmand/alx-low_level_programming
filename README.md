@@ -1,6 +1,5 @@
-**WELCOME TO SYSTEM ENGINEERING DEVOPS**
-<br>
-Learning Objectives:<br>
+<h1>WELCOME TO SYSTEM ENGINEERING DEVOPS</h1>
+<h4>Learning Objectives:</h4>
 * Hello World
 * Variables and conditionals
 * Functions and loops
