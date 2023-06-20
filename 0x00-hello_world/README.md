@@ -1,4 +1,4 @@
-<h1>Welcome to adventures of C programming<h1>
+<h1>Welcome to adventures of C programming</h1>
 <h4>Learning objectives:</h4>
 <ol>
 <li>Installing and using betty</li>
