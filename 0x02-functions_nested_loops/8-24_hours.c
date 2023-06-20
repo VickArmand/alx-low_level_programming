@@ -25,15 +25,15 @@ void jack_bauer(void)
 			}
 			putchar(':');
 			if (min >= 0 && min < 10)
-                        {
-                                putchar('0');
-                                putchar(min + '0');
-                        }
-                        else
-                        {
-                                putchar((min / 10) + '0');
-                                putchar((min % 10) + '0');
-                        }
+			{
+				putchar('0');
+				putchar(min + '0');
+			}
+			else
+			{
+				putchar((min / 10) + '0');
+				putchar((min % 10) + '0');
+			}
 			putchar('\n');
 			min++;
 		}
