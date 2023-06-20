@@ -15,26 +15,26 @@ void jack_bauer(void)
 		{
 			if (hours >= 0 && hours < 10)
 			{
-				putchar('0');
-				putchar(hours + '0');
+				_putchar('0');
+				_putchar(hours + '0');
 			}
 			else
 			{
-				putchar((hours / 10) + '0');
-				putchar((hours % 10) + '0');
+				_putchar((hours / 10) + '0');
+				_putchar((hours % 10) + '0');
 			}
-			putchar(':');
+			_putchar(':');
 			if (min >= 0 && min < 10)
 			{
-				putchar('0');
-				putchar(min + '0');
+				_putchar('0');
+				_putchar(min + '0');
 			}
 			else
 			{
-				putchar((min / 10) + '0');
-				putchar((min % 10) + '0');
+				_putchar((min / 10) + '0');
+				_putchar((min % 10) + '0');
 			}
-			putchar('\n');
+			_putchar('\n');
 			min++;
 		}
 		hours++;

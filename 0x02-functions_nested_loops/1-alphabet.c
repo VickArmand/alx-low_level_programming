@@ -10,8 +10,8 @@ void print_alphabet(void)
 
 	while (letter < 123)
 	{
-		putchar(letter);
+		_putchar(letter);
 		letter++;
 	}
-	putchar('\n');
+	_putchar('\n');
 }

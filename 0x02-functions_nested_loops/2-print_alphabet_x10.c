@@ -14,10 +14,10 @@ void print_alphabet_x10(void)
 		letter = 97;
 		while (letter < 123)
 		{
-			putchar(letter);
+			_putchar(letter);
 			letter++;
 		}
-		putchar('\n');
+		_putchar('\n');
 		times++;
 	}
 }
