@@ -1,5 +1,5 @@
 <h1>Welcome to adventures of variables, conditionals and loops</h1>
-<h4>Learning objectives:<h4>
+<h4>Learning objectives:</h4>
 <ul>
 <li>Variables</li>
 <li>Comments</li>
