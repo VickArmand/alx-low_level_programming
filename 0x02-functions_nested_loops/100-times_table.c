@@ -16,10 +16,10 @@ void print_times_table(int n)
 	else
 	{
 		rows = 0;
-		while (rows < n)
+		while (rows <= n)
 		{
 			columns = 0;
-			while (columns < n)
+			while (columns <= n)
 			{
 				product = rows * columns;
 				if (columns == 0)
