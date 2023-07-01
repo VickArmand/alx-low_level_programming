@@ -7,7 +7,7 @@
 
 void print_number(int n)
 {
-	unsigned int long x = 1, y = n, res;
+	unsigned int x = 1, y = n, res;
 
 	if (n == 0)
 		_putchar('0');
