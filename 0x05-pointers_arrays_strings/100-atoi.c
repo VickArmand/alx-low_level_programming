@@ -28,9 +28,7 @@ int _atoi(char *s)
 
 	while (i >= index)
 	{
-		int digit = s[i] - '0';
-
-		num += digit * multiplier;
+		num += (s[i] - '0') * multiplier;
 		multiplier *= 10;
 		i--;
 	}
