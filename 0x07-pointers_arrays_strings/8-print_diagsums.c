@@ -21,6 +21,6 @@ void print_diagsums(int *a, int size)
 	{
 		sum[1] += *(a + (rows * size) + (size - rows - 1));
 	}
-	printf("%d ", sum[0]);
+	printf("%d, ", sum[0]);
 	printf("%d\n", sum[1]);
 }
