@@ -29,13 +29,27 @@ int _strlen(char *s)
 
 char *_strstr(char *haystack, char *needle)
 {
+	int i = 0, j, startindex;
 	int len1 = _strlen(haystack), len2 = _strlen(needle);
 
-	len1--, len2--;
+	startindex = len1;
+	while (i < len2)
+	{
+		for (j = 0; j < len1; j++)
+		{
+			if ((haystack[j] == needle[0]) &&
+					(haystack[j + 1] == needle[1]))
+			{
+				startindex = j < startindex ? j : startindex;
+				break;
+			}
+		}
+		i++;
+	}
 	if (_substr(haystack, needle) == 0)
 		return (NULL);
 	else
-		return (haystack + len1 - len2);
+		return (haystack + startindex);
 }
 
 /**
