@@ -1,6 +1,6 @@
 #include "main.h"
-#include <stdio.h>
 
+int _substr(char *haystack, char *needle);
 /**
  * _strlen - returns the length of a string.
  * @s: string to be used
@@ -29,7 +29,25 @@ int _strlen(char *s)
 
 char *_strstr(char *haystack, char *needle)
 {
-	int i = 0, j, index;
+	int len1 = _strlen(haystack), len2 = _strlen(needle);
+
+	len1--, len2--;
+	if (_substr(haystack, needle) == 0)
+		return (NULL);
+	else
+		return (haystack + len1 - len2);
+}
+
+/**
+ * _substr - confirms if substring is present in haystack
+ * @haystack: char pointer
+ * @needle: char pointer
+ * Return: 0 if not present 1 otherwise
+ */
+
+int _substr(char *haystack, char *needle)
+{
+	int i = 0, j, ispresent = 0;
 	int len1 = _strlen(haystack), len2 = _strlen(needle);
 
 	for (; i < len2; i++)
@@ -38,12 +56,10 @@ char *_strstr(char *haystack, char *needle)
 		{
 			if ((haystack[j] == needle[i]) &&
 					(haystack[j + 1] == needle[i + 1]))
-			{
-				index = j - (len2 - 1);
 				break;
-			}
 		}
 	}
-	return (haystack + index);
+	if (haystack[j] == needle[len2 - 1])
+		ispresent = 1;
+	return (ispresent);
 }
-
