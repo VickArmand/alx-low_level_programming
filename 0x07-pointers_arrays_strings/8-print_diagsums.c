@@ -18,9 +18,9 @@ void print_diagsums(int *a, int size)
 	}
 	rows = size - 1;
 	for (; rows >= 0; rows--)
-        {
+	{
 		sum[1] += *(a + (rows * size) + (size - rows - 1));
-        }
+	}
 	printf("%d ", sum[0]);
 	printf("%d\n", sum[1]);
 }
