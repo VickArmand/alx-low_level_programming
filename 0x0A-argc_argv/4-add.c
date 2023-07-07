@@ -22,7 +22,6 @@ int main(int argc, char **argv)
 		{
 			if (!atoi(argv[i]))
 			{
-				printf("%s", argv[i]);
 				printf("Error\n");
 				return (1);
 			}
