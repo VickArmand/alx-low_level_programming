@@ -9,7 +9,7 @@
 
 int main(int argc, char **argv)
 {
-	int sum = 0;
+	int sum = 0, i;
 
 	if (argc < 2)
 	{
@@ -17,14 +17,16 @@ int main(int argc, char **argv)
 	}
 	else
 	{
-		while (argc--)
+		i = 1;
+		for (; i < argc; i++)
 		{
-			if (atoi(argv[argc]))
+			if (!atoi(argv[i]))
 			{
+				printf("%s", argv[i]);
 				printf("Error\n");
 				return (1);
 			}
-			sum += atoi(argv[argc]);
+			sum += atoi(argv[i]);
 		}
 		printf("%d\n", sum);
 	}
