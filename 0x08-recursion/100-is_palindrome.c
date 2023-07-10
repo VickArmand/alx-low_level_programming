@@ -1,8 +1,11 @@
 #include "main.h"
 
 /**
- *
- *
+ * _check_palindrome - checks for palindrome in string
+ * @s : string
+ * @index1: integer
+ * @index2: integer
+ * Return: 1 if a string is a palindrome and 0 if not
  */
 int _check_palindrome(char *s, int index1, int index2)
 {
