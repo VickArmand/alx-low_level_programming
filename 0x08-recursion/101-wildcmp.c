@@ -22,13 +22,13 @@ int cmpstr(char *s1, char *s2, int index)
 	}
 	else if (*s1 == '\0' && *s2 == '*')
 	{
-                return (cmpstr(s1, s2 + 1, index));
+		return (cmpstr(s1, s2 + 1, index));
 	}
 	return (cmpstr(s1, s2 + 1, index));
 }
 
 /**
- * compares two strings and returns 1 if the strings
+ * wildcmp - compares two strings and returns 1 if the strings
  * can be considered identical, otherwise return 0
  * @s1: string one
  * @s2: string two
@@ -39,6 +39,7 @@ int cmpstr(char *s1, char *s2, int index)
 int wildcmp(char *s1, char *s2)
 {
 	int index = 0;
+
 	if (*(s1) == '\0' && *(s2) == '\0')
 		return (1);
 	else if (*s1 == *s2)
