@@ -30,7 +30,7 @@ int main(int argc, char **argv)
 			|| (strcmp(argv[2], "%") != 0))
 	{
 		printf("Error\n");
-		exit(100);
+		exit(99);
 	}
 	num1 = atoi(argv[1]);
 	num2 = atoi(argv[3]);
