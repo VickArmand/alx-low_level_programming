@@ -9,23 +9,10 @@
 void print_all(const char * const format, ...)
 {
 	char *string;
-	int i = 0, count = 0, j, c = 0;
-	char *expected = "cifs";
+	int i = 0;
 	va_list list;
 
 	va_start(list, format);
-
-	j = 0;
-	while(expected[j])
-	{
-		if (format[c] == expected[j])
-		{
-			c++;
-			j++;
-			count++;
-		}
-	}
-	printf("%d\n", count);
 	while ((format != NULL) && (format[i] != '\0'))
 	{
 		switch (format[i])
