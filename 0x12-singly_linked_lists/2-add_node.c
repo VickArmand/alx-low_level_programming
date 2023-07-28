@@ -23,11 +23,10 @@ list_t *add_node(list_t **head, const char *str)
 		i = 0;
 		while (str[i] != '\0')
 		{
-			new_node->str[i] = str[i];
 			i++;
 		}
-		new_node->str[i] = '\0';
-		new_node->len = i - 1;
+		new_node->str = strdup(str);
+		new_node->len = i;
 	}
 	else
 	{
