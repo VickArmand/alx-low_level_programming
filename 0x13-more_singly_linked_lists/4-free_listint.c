@@ -12,6 +12,6 @@ void free_listint(listint_t *head)
 	{
 		free(&(head->n));
 		free(head->next);
-		head = head->next; 
+		head = head->next;
 	}
 }
