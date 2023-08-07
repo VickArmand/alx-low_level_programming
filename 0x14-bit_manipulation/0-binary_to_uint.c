@@ -11,10 +11,11 @@ unsigned int _pow(int num, unsigned int superscript);
 unsigned int binary_to_uint(const char *b)
 {
 	unsigned int bintoint = 0;
-	int value, i, len = _strlen(b);
+	int value, i, len;
 
 	if (b != NULL)
 	{
+		len = _strlen(b);
 		i = len - 1;
 		while (i >= 0)
 		{
