@@ -24,8 +24,6 @@ int get_bit(unsigned long int n, unsigned int index)
 	}
 	i = 0;
 
-	if (index > len)
-		return (-1);
 	while (j <= index)
 	{
 		bit = res % 10;
