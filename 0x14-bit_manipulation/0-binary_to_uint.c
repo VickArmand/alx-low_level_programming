@@ -1,6 +1,5 @@
 #include "main.h"
 
-unsigned int _pow(int num, unsigned int superscript);
 /**
  * binary_to_uint - converts a binary number to an unsigned int.
  * @b: b is pointing to a string of 0 and 1 chars
@@ -22,7 +21,7 @@ unsigned int binary_to_uint(const char *b)
 			if (b[i] == '1' || b[i] == '0')
 			{
 				value = b[i] - '0';
-				bintoint += _pow(2, (len - i - 1)) * value;
+				bintoint += (value << (len - i - 1));
 			}
 			else
 				return (0);
@@ -32,30 +31,6 @@ unsigned int binary_to_uint(const char *b)
 	else
 		return (0);
 	return (bintoint);
-}
-
-/**
- * _pow - calculates the power
- * @num: integer
- * @superscript: integer
- * Return: resulting power
- */
-
-unsigned int _pow(int num, unsigned int superscript)
-{
-	unsigned int i, res = 1;
-
-	if (superscript == 0)
-		return (1);
-	else if (superscript == 1)
-		return (num);
-	i = 1;
-	while (i <= superscript)
-	{
-		res *= num;
-		i++;
-	}
-	return (res);
 }
 
 /**
