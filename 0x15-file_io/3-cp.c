@@ -21,7 +21,6 @@ int main(int argc, char **argv)
 	else
 	{
 		buffer = malloc(sizeof(char) * 1024);
-
 		fd1 = open(argv[1], O_RDONLY);
 		fd2 = open(argv[2], O_CREAT | O_WRONLY | O_TRUNC, 0664);
 		if (fd1 == -1 || buffer == NULL)
@@ -37,8 +36,7 @@ int main(int argc, char **argv)
 		len = 1024;
 		while (len == 1024)
 		{
-			len = read(fd1, buffer, 1024);
-			write(fd2, buffer, 1024);
+			len = read(fd1, buffer, 1024), write(fd2, buffer, 1024);
 		}
 		if (close(fd1) == -1)
 		{
