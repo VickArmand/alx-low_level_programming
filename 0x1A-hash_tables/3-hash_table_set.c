@@ -49,6 +49,7 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 		ht->array[i] = new;
 	else
 	{
+		ptr = ht->array[i];
 		while (ptr != NULL)
 		{
 			if (strcmp(ptr->key, key) == 0)
