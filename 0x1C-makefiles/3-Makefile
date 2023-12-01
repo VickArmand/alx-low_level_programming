@@ -5,7 +5,7 @@ NAME= school
 RM= rm
 
 all: $(SRC)
-	$(CC) $(SRC) -o school
+	$(CC) $(SRC) -o $(NAME)
 
 clean: $(NAME)
 	$(RM) $(NAME) *.swp *~
