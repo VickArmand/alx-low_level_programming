@@ -9,7 +9,7 @@ all: m.h $(OBJ)
 clean:
 	$(RM) $(NAME) *.swp *~
 
-oclean: $(OBJ)
+oclean:
 	$(RM) $(OBJ)
 
 fclean: clean oclean
