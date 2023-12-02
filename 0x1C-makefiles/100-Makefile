@@ -3,6 +3,10 @@ SRC= main.c school.c
 OBJ= $(SRC:.c=.o)
 NAME= school
 CFLAGS= -Wall -Werror -Wextra -pedantic
+
+# standard rule to say rules below are not filenames
+.PHONY: all clean oclean fclean re
+
 all: m.h $(OBJ)
 	$(CC) $(OBJ) -o $(NAME)
 
@@ -15,5 +19,3 @@ oclean:
 fclean: clean oclean
 
 re: fclean all
-
-
